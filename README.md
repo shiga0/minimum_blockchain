@@ -2,6 +2,9 @@
 
 This is a minimal blockchain program implemented in Ruby. It allows the user to understand the simplified data structure of the blockchain.
 
+![スクリーンショット 2024-04-29 15 34 11](https://github.com/shiga0/minimum_blockchain/assets/13078565/7ff1bb65-e167-4c15-90df-86fb065dad31)
+
+
 ## Dependencies
 -  [Digest::SHA256](https://ruby-doc.org/stdlib-2.4.0/libdoc/digest/rdoc/Digest/SHA2.html): SHA-256 hashing algorithm.
 
