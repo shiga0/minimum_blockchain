@@ -1,6 +1,5 @@
 # Minimum Blockchain
 
----
 This is a minimal blockchain program implemented in Ruby. It allows the user to understand the simplified data structure of the blockchain.
 
 ## Dependencies
