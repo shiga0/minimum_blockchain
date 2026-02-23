@@ -1,17 +1,56 @@
-# Minimum Blockchain
+# Minimum Blockchain (Ruby)
 
-This is a minimal blockchain program implemented in Ruby. It allows the user to understand the simplified data structure of the blockchain.
+A minimal blockchain implementation in Ruby for learning **how blocks connect by hashes**.
 
-![スクリーンショット 2024-04-29 15 34 11](https://github.com/shiga0/minimum_blockchain/assets/13078565/7ff1bb65-e167-4c15-90df-86fb065dad31)
+This repository focuses on the **core data structure** of a blockchain with the smallest possible codebase.
 
+---
 
-## Dependencies
--  [Digest::SHA256](https://ruby-doc.org/stdlib-2.4.0/libdoc/digest/rdoc/Digest/SHA2.html): SHA-256 hashing algorithm.
+## 🎯 What this is
 
-## Usage
+This project demonstrates:
 
+- Block structure (`index`, `data`, `prev_hash`, `hash`)
+- Hash chaining (each block references the previous block’s hash)
+- A minimal “chain” that you can run and inspect
+
+> Clarity over completeness: no networking, no P2P, no transactions.
+
+---
+
+## 🧠 What you’ll learn
+
+- Why `prev_hash` makes tampering detectable
+- How SHA-256 hashing is used to link blocks
+- How a chain can be validated conceptually (even in a tiny implementation)
+
+---
+
+## 🔗 How blocks connect (simplified)
+
+The diagram below matches the structure used in this repository:
+
+![Simplified blockchain structure](https://github.com/shiga0/minimum_blockchain/assets/13078565/7ff1bb65-e167-4c15-90df-86fb065dad31)
+
+---
+
+## ✅ Dependencies
+
+- [Digest::SHA256](https://ruby-doc.org/stdlib-2.4.0/libdoc/digest/rdoc/Digest/SHA2.html) — SHA-256 hashing algorithm (Ruby stdlib)
+
+---
+
+## 🚀 Quick Start
+
+```bash
+ruby blockchain.rb
 ```
-minimum_blockchain % ruby blockchain.rb
+
+---
+
+## 📌 Example Output
+
+```text
 ========================
 🚀 minimum_blockchain 🚀
 ========================
@@ -39,3 +78,14 @@ minimum_blockchain % ruby blockchain.rb
 🎊🥳🎉 Congrats!  🎊🥳🎉
 ========================
 ```
+
+---
+
+## 🔬 Notes
+
+This is an educational project, not production-ready.
+
+Created by @shiga0
+
+
+If this repository helped you understand blockchain basics, please consider giving it a ⭐
