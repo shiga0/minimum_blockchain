@@ -1,8 +1,8 @@
-# Minimum Blockchain (Ruby)
+# Minimum Blockchain in Ruby — Learn Hash Linking from Scratch
 
-A minimal blockchain implementation in Ruby for learning **how blocks connect by hashes**.
+A minimal blockchain implementation in Ruby to understand how blocks are connected by cryptographic hashes from scratch.
 
-This repository focuses on the **core data structure** of a blockchain with the smallest possible codebase.
+This repository focuses on the core data structure of a blockchain using the smallest possible codebase.
 
 ---
 
@@ -12,17 +12,18 @@ This project demonstrates:
 
 - Block structure (`index`, `data`, `prev_hash`, `hash`)
 - Hash chaining (each block references the previous block’s hash)
-- A minimal “chain” that you can run and inspect
+- A minimal blockchain you can run and inspect
 
-> Clarity over completeness: no networking, no P2P, no transactions.
+> Clarity over completeness: no networking, no P2P, no transactions, no frameworks.
 
 ---
 
-## 🧠 What you’ll learn
+## 🧠 What you'll learn
 
 - Why `prev_hash` makes tampering detectable
-- How SHA-256 hashing is used to link blocks
-- How a chain can be validated conceptually (even in a tiny implementation)
+- How SHA-256 hashing links blocks together
+- How blockchain integrity works conceptually
+- Why hash chaining is fundamental to blockchain design
 
 ---
 
@@ -34,9 +35,22 @@ The diagram below matches the structure used in this repository:
 
 ---
 
+## 🧪 Try Breaking It
+
+Modify the `data` value inside one of the blocks and run the program again.
+
+Notice how:
+
+- The hash changes
+- The chain integrity breaks
+
+This demonstrates why hash linking makes blockchain tamper-evident.
+
+---
+
 ## ✅ Dependencies
 
-- [Digest::SHA256](https://ruby-doc.org/stdlib-2.4.0/libdoc/digest/rdoc/Digest/SHA2.html) — SHA-256 hashing algorithm (Ruby stdlib)
+- [Digest::SHA256](https://ruby-doc.org/stdlib-2.4.0/libdoc/digest/rdoc/Digest/SHA2.html) — SHA-256 hashing algorithm (Ruby standard library)
 
 ---
 
@@ -75,17 +89,27 @@ ruby blockchain.rb
 🤑hash: 40a57855c9c95ed29f1cafaee727143f0d71f904cc823ed901da5bab30c45aaa
 ----------------------
 ========================
-🎊🥳🎉 Congrats!  🎊🥳🎉
+🎊🥳🎉 Congrats! 🎊🥳🎉
 ========================
 ```
 
 ---
 
-## 🔬 Notes
+## 🧩 Philosophy
 
-This is an educational project, not production-ready.
+Build small.  
+Understand deeply.  
+Avoid abstraction until necessary.
 
-Created by @shiga0
+---
 
+## 🏷 Topics
+
+`blockchain` `ruby` `education` `learning` `cryptography` `sha256` `data-structure` `minimal`
+
+---
 
 If this repository helped you understand blockchain basics, please consider giving it a ⭐
+
+Created by @shiga0  
+Part of the **Minimum Series** projects.
